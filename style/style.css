@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+/* Raleway, heavy-900, bold-700, light-300 */
+body{
+    height: 500vh;
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+    /* background: linear-gradient( #f9f8fb 20%, #00afaf 20%  38%, #70bfff 38% 60%, #ffe92f 60% 70%, #ffffff  70% 80%, #b07cf7 80% 90%, black 90%); */
+}
+/* 'Pacifico', regular, 400 */
+.logo{
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+}
+
+/* Stylizacja Nacbara */
+.navbar li{
+    margin-left: 20px;
+}
+.navbar li.active{
+    border-top: 4px solid #ff6033;
+    border-radius: 5%;
+}
+.navbar li a{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    color: black;
+}
+
+
+section{
+    height: 90vh;
+}
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.container-fluid .row>header{
+    height: 90vh;
+    /* display: relative; */
+    width: 100%;
+    background-image: url("../img/img-11.png");
+    background-position:center;
+    background-size: cover;
+}
+
+.container-fluid .row>header h1{
+    font-weight: 900;
+    font-size: 50px;
+}
+.container-fluid .row>header p{
+    line-height: 170%;
+}
+
+.btn{
+    text-transform: uppercase;    
+    border-radius: 0;
+    background-color: #ff6033;
+}
+.info{
+    background-color: #00afaf;
+}
+
+.info img{
+    width: 50%;
+    height: auto;
+}
+
+.info h2{
+    font-weight: 700;
+    font-size: 55px;
+    color: white;
+    display: inline-block;
+}
+
+.info p{
+    font-size: 16px;
+    color: white;
+    display: inline-block;
+    line-height: 170%;
+}
+
+
+
+@media(max-width:950px){
+    .info h2{
+        font-size: 45px;
+    }
+    .info p{
+        font-size: 15px;
+    }
+}
+@media(max-width:767px){
+    .container-fluid .row>header h1{
+        font-size: 38px;
+    }
+    .container-fluid .row>header p{
+        font-size: 15px;
+    }
+    .btn{
+        font-size: 15px
+    }
+    .info h2{
+        font-size: 35px;
+    }
+    .info p{
+        font-size: 14px;
+    }
+}
