@@ -1,23 +1,34 @@
+/* Style reset and basic settings. */
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     
 }
-/* Raleway, heavy-900, bold-700, light-300 */
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+section{
+    height: 90vh;
+}
+
+
+/* Font 1: Raleway, heavy-900, bold-700, light-300 */
 body{
     height: 500vh;
     font-family: 'Raleway', sans-serif;
     overflow-x: hidden;
-    /* background: linear-gradient( #f9f8fb 20%, #00afaf 20%  38%, #70bfff 38% 60%, #ffe92f 60% 70%, #ffffff  70% 80%, #b07cf7 80% 90%, black 90%); */
 }
-/* 'Pacifico', regular, 400 */
+
+/* Font 2: 'Pacifico', regular, 400 */
 .logo{
     font-family: 'Pacifico', cursive;
     font-size: 40px;
 }
 
-/* Stylizacja Nacbara */
+
+/* Navbar */
 .navbar li{
     margin-left: 20px;
 }
@@ -27,42 +38,35 @@ body{
 }
 .navbar li a{
     text-transform: uppercase;
-    font-weight: 700;
     font-size: 14px;
+    font-weight: 700;
     color: black;
 }
 
-
-section{
+/* Header */
+.container-fluid header{
     height: 90vh;
-}
-.container-fluid{
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.container-fluid .row>header{
-    height: 90vh;
-    /* display: relative; */
     width: 100%;
     background-image: url("../img/img-11.png");
     background-position:center;
     background-size: cover;
 }
 
-.container-fluid .row>header h1{
-    font-weight: 900;
+.container-fluid header h1{
     font-size: 50px;
+    font-weight: 900;
 }
-.container-fluid .row>header p{
+.container-fluid header p{
     line-height: 170%;
 }
 
-.btn{
-    text-transform: uppercase;    
+.container-fluid header .btn{
+    text-transform: uppercase; 
+    background-color: #ff6033;   
     border-radius: 0;
-    background-color: #ff6033;
 }
+
+/* Info section */
 .info{
     background-color: #00afaf;
 }
@@ -73,70 +77,68 @@ section{
 }
 
 .info h2{
-    font-weight: 700;
-    font-size: 55px;
-    color: white;
     display: inline-block;
-}
+    font-size: 55px;
+    font-weight: 700;
+    color: white;
+}  
 
 .info p{
+    display: inline-block;
     font-size: 16px;
     color: white;
-    display: inline-block;
     line-height: 170%;
 }
 
+/* Services section. */
 .services{
     background-color: #70bfff;
 }
-/* .services>.row>div{
-    align-self: center;
-} */
 
-.services div div.serv-item{
+.services .serv-item{
+    position: relative;
+    height: 60px;
     border: 1px solid gray;
     box-shadow: 2px 2px 1px 1px rgba(0,0,0,0.3);
     margin-bottom: 20px;
     font-size: 16px;
-    height: auto;
-    position: relative;
-    height: 60px;
-    /* align-self: center; */
 }
 
-.services div div.serv-item span{
-    font-weight: 700;
+.services .serv-item span{
     height: auto;
-    text-align: center;
     width: 90%;
     position: absolute;
     top:50%;
     left: 0;
     transform: translateY(-50%);
-
+    font-weight: 700;
+    text-align: center;
 }
 
 .services i{
-    font-size: 28px;
-    width: 10%;
     display: block;
+    width: 10%;
     position: absolute;
-    right: 2.5%;
     top: 50%;
+    right: 2.5%;
     transform: translate(-50%, -50%); 
+    font-size: 28px;
 }
 
 .services h2{
-    font-size: 65px;
-    font-weight: 700;
-    color: white;
     position: absolute;
     top: 50%;
     left:75%;
     transform: translate(-50%, -50%);
     z-index: 100;
-    
+    font-size: 65px;
+    font-weight: 700;
+    color: white;
 }
+
+
+
+/* Media Queries */
 @media(max-width:1200px){
     .services h2{
         font-size: 50px;
@@ -173,18 +175,15 @@ section{
     .info p{
         font-size: 14px;
     }
-    
     .services h2{
-        font-size: 40px;
         order:1;
         top: 20%;
         left: 50%;
         transform: translate(-50%, -50%);
-        
+        font-size: 40px;
     }
     .services img{
         order:2;
-        
     }
     .services .row>div{
         order:3;
