@@ -136,6 +136,35 @@ body{
     color: white;
 }
 
+/* Gallery section */
+.gallery{
+    height: 140vh;
+    background-color: #ffe92f;
+   
+}
+
+.gallery h2{
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.gallery p{
+    line-height: 160%;
+}
+
+.gallery .btn{
+    height: auto;
+    border-radius: 0;
+    background-color: #5585a2;
+    
+}
+
+.gallery .photos-container{
+    height: 60%;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
 
 
 /* Media Queries */
