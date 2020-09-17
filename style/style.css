@@ -128,7 +128,7 @@ body{
 .services h2{
     position: absolute;
     top: 50%;
-    left:75%;
+    left:65%;
     transform: translate(-50%, -50%);
     z-index: 100;
     font-size: 65px;
@@ -139,9 +139,11 @@ body{
 
 
 /* Media Queries */
+
 @media(max-width:1200px){
     .services h2{
         font-size: 50px;
+        left:75%;
     }
     .services i{
         font-size: 22px;
@@ -151,7 +153,15 @@ body{
     }
 }
 
+@media (width: 1200px){
+    .services h2{
+        font-size: 65px;
+        left: 70%;
+    }
+}
+
 @media(max-width:950px){
+    
     .info h2{
         font-size: 45px;
     }
