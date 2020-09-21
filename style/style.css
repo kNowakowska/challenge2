@@ -237,24 +237,57 @@ body{
     top: 35%;
     height: 40%;
 }
-.blog .articles article{
-    
-    background-position: center;
+.blog .articles .article{
+    height: 80%;
+    overflow: hidden;
+    background-position: center, bottom;
     background-size: cover;
 }
 
-
 .blog .articles #article-1{
-    background-image: url("../img/img-3.jpg");
+    background-image: linear-gradient(to bottom, transparent 50%, black 110%), url("../img/img-3.jpg");
 }
 
 .blog .articles #article-2{
-    background-image: url("../img/img-2.jpg");
+    background-image:linear-gradient(to bottom, transparent 50%, black 110%), url("../img/img-2.jpg");
 }
 
 .blog .articles #article-3{
-    background-image: url("../img/img-1.jpg");
+    background-image:linear-gradient(to bottom, transparent 50%, black 110%), url("../img/img-1.jpg");
 }
+
+.blog .article .date{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 20%;
+    border-radius: 3%;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 120%;
+}
+
+.blog .article h3{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    font-size: 20px;
+    line-height: 125%;
+    color: white;
+    font-weight: 700;
+}
+
+.blog .article .details{
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    color: white;
+    font-size: 13px;
+}
+
 
 /* Media Queries */
 
@@ -268,6 +301,25 @@ body{
     }
     .services span{
         font-size: 15px;
+    }
+    .blog{
+        height: 120vh;
+    }
+
+    .blog h2{
+        font-size: 60px;
+        top: 0;
+    }
+
+    .blog p{
+        top: 12%;
+    }
+    .blog .articles{
+        top: 25%;
+    }
+
+    .blog button{
+        bottom: 2%;
     }
 }
 
@@ -331,5 +383,30 @@ body{
     }
     .gallery h2{
         font-size: 55px;
+    }
+
+    .blog{
+        height: 145vh;
+    }
+    .blog h2{
+        font-size: 40px;
+    }
+
+    .blog p{
+        top: 6%;
+        font-size: 14px;
+    }
+    .blog .articles{
+        top: 18%;
+    }
+    .blog button{
+        bottom: 0%
+    }
+
+    .blog .articles .article{
+        height: 60%;
+    }
+    .blog .article h3{
+        font-size: 18px;
     }
 }
