@@ -158,6 +158,42 @@ body{
     background-color: #5585a2;
 }
 
+/* Subscription section */
+
+.subscription{
+    height: 70vh;
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    
+}
+.subscription .container{
+    position: relative;
+}
+
+.subscription .row{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+} 
+
+.subscription h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.subscription input{
+    font-size: 16px;
+    line-height: 120%;
+}
+
+.subscription input.btn{
+    border: 2px solid #96b92c;
+    border-radius: 0;
+    background-color: #96b92c;
+    color: white;
+}
+
 
 /* Media Queries */
 
