@@ -288,6 +288,61 @@ body{
     font-size: 13px;
 }
 
+/* Contact section */
+
+.contact{
+    height: 100vh;
+    background-image: url("../img/img.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.contact h2{
+    position: absolute;
+    top: 0;
+    font-size: 90px;
+    font-weight: 700;
+}
+
+.contact p{
+    position: absolute;
+    top: 23%
+}
+.contact form{
+    position: absolute;
+    top: 32%;
+    left: 0;
+    color: white;
+}
+
+.contact form input, .contact form textarea{
+    border:none;
+    font-size: 18px;
+    color: white;
+    background-color: rgba(0,196,196,0.4);
+}
+.contact form input::placeholder, .contact form textarea::placeholder{
+    color:white;
+    font-size: 12px;
+}
+.contact form input:nth-of-type(1){
+    font-weight: 700;
+    border-left: 5px solid #355b82;
+    background-color: rgba(0,196,196,0.8);
+}
+
+.contact form input:focus, .contact form textarea:focus{
+    outline: none;
+}
+
+.contact address{
+    position: absolute;
+    top: 32%;
+    right: 20%;
+}
+.contact address b{
+    text-transform: uppercase;
+}
 
 /* Media Queries */
 
@@ -327,6 +382,19 @@ body{
     .services h2{
         font-size: 65px;
         left: 70%;
+    }
+}
+@media(max-width:992px){
+    .contact h2{
+        font-size: 60px;
+    }
+    .contact p{
+        top: 18%;
+    }
+
+    .contact address{
+        right:5%;
+        font-size: 14px
     }
 }
 
@@ -409,4 +477,24 @@ body{
     .blog .article h3{
         font-size: 18px;
     }
+
 }
+@media(max-width:575px){
+    .contact{
+        height: 120vh;
+    }
+    .contact p{
+        top: 15%
+    }
+    .contact form{
+        top: auto;
+        bottom: 5%;
+        left:0
+    }
+    .contact address{
+        left:0;
+        top: 22%;
+        text-align: center;
+    }
+}
+   
