@@ -49,6 +49,7 @@ body{
 
 /* Header */
 .container-fluid header{
+    margin-top: 50px;
     height: 90vh;
     width: 100%;
     background-image: url("../img/img-11.png");
