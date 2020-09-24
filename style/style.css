@@ -162,6 +162,18 @@ body{
     border-radius: 0;
     background-color: #5585a2;
 }
+.gallery img{
+    transform: scale(1,1);
+}
+
+/* Growing photo effect after hover */
+
+.gallery img:hover{
+   transition-duration: 250ms;
+    transition-timing-function: ease-out;
+    transform: scale(1.02,1.03);
+    cursor:pointer
+}
 
 /* Subscription section */
 
@@ -321,19 +333,20 @@ body{
     font-size: 18px;
     color: white;
     background-color: rgba(0,196,196,0.4);
+    font-weight: 400;
+    border-left: none;
 }
 .contact form input::placeholder, .contact form textarea::placeholder{
     color:white;
     font-size: 12px;
 }
-.contact form input:nth-of-type(1){
-    font-weight: 700;
-    border-left: 5px solid #355b82;
-    background-color: rgba(0,196,196,0.8);
-}
 
 .contact form input:focus, .contact form textarea:focus{
     outline: none;
+    transition-duration: 250ms;
+    font-weight: 700;
+    border-left: 5px solid #355b82;
+    background-color: rgba(0,196,196,0.8);
 }
 
 .contact address{
@@ -344,6 +357,15 @@ body{
 .contact address b{
     text-transform: uppercase;
 }
+
+.contact form input:hover, .contact form textarea:hover{
+    transition-duration: 250ms;
+    font-weight: 700;
+    border-left: 5px solid #355b82;
+    background-color: rgba(0,196,196,0.8);
+}
+
+    
 
 /* Footer */
 

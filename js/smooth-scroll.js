@@ -7,23 +7,13 @@ $('a[href*="#"]').not('[href="#"]').on("mouseover click", function(e){
     $('html, body').animate({
         scrollTop: $(this.hash).offset().top-navHeight
       }, 700);
+    
 })
 
-// $("#home-link").on("mousemove click",function(e){
-//     console.log("move");
-//     e.preventDefault();
-//     $("nav li").removeClass("active");
-//     $(this).parent().addClass("active");
-//     $('body').animate({
-//         scrollTop: ($($.attr(this, 'href')).offset().top+navHeight)
-//     }, 800);
-// })
-
-// $("#about-link").on("mouseover click",function(e){
-//     e.preventDefault();
-//     $("nav li").removeClass("active");
-//     $(this).parent().addClass("active");
-//     $('body').animate({
-//         scrollTop: ($($.attr(this, 'href')).offset().top+navHeight)
-//     }, 800);
-// })
+$(window).on("scroll", function(){
+  if($(window).scrollTop()> $('nav').height()){
+    $('nav').css("border-bottom", "1px solid rgba(0,0,0,0.1)");
+  }else{
+    $('nav').css("border-bottom", "none");
+  }
+})
