@@ -8,7 +8,7 @@ The project was created with the use of HTML, CSS, jQuery and Bootstrap. That's 
 The app is available on GitHubPages: https://knowakowska.github.io/challenge2/ 
 
 Future ideas:
--- improve the styling and animations
--- showing detials after clicking "view more" button with the use of AJAX
--- better the Bootstrap structure
+--improve the styling and animations
+--showing detials after clicking "view more" button with the use of AJAX
+--better the Bootstrap structure
 
